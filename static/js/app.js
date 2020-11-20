@@ -19,3 +19,18 @@ function buildTable(data) {
       );
     });
 }
+//
+// Start new function to click a button for user input
+function handleClick(data) {
+    let date = d3.select("#datetime").property("value"); 
+    let filteredData = tableData; 
+    if (date) {
+        filteredData = filteredData.filter(row => row.datetime === date);
+    };
+    buildTable(filteredData);
+};
+//
+// attach an event to listen for the form button
+d3.selectAll("#filter-btn").on("click", handleClick);
+// build the table when the page loads
+buildTable(tableData);
