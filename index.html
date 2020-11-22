@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</UFO Finder>
+    <title>UFO Finder</title>
         <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -13,17 +13,98 @@
         
     />
         <link 
-        rel="stylesheet" href="static/css/style.css">
+        rel="stylesheet" href="static/css/style.css"/>
 </head>
 <body>
     <div class="wrapper">
+        <!-- spcifies that we want a component that fits across top of page and adjusts to screen size and is a navigation button or menu that can be clicked to go elsewhere-->
         <nav class="navbar navbar-expand-lg">
+            <!-- when user clicks on link the page will reload and the default unfiltered table will appear-->
             <a class="navbar-brand" href="index.html">UFO Sightings</a>
 
         </nav>
 
     </div>
-    
+    <!-- this next part is completely separate from the navbar above so start its own section  - this adds the website heading-->
+    <div class="jumbotron">
+        <h1>The Truth Is Out There</h1>
+    </div>
+<!-- set up grid system for web page. make the container fluid so it can change with screen size-->
+      <div class="container-fluid">
+          <!-- row class makes it so the title and paragraph will align neatly along the page-->
+        <div class="row">
+            <!-- The first part will go a third across 4/12 and the second one will take up the remaining 2/3  or 8/12-->
+            <div class="col-md-4">
+                <h3>UFO Sightings: Fact or Fancy? <small>Ufologists Weigh In</small></h3>
+            </div>
+            <div class="col-md-8">
+                <p>
+                    Are we alone in the universe? For millennia, humans have turned to the sky to answer this question. Now, thanks to research generously funded by W. Avy, a UFO-enthusiast and amateur ufologist, we can supplement our sky-searching with data analysis.<br><br>"The release of this analysis is well-timed: It coincides with the celebration of World UFO Day, which is a moment for ufologists around the world to connect, relax, and sample a range of UFO-themed snacks," said Dr. Ursula F. Olivier, the world's preeminent expert on circular sightings. "Citizen-scientists can be especially helpful in both cataloguing sightings—which is hugely helpful for us in our search for aliens—and in helping us celebrate the work that has already been done, such as this data visualization project, which will help us raise awareness of the ubiquity of sightings!"<br><br>Not everyone is ready to celebrate, however. Local CEO and vocal anti-alien activist V. Isualize reached out to our reporters to go on record as firmly opposed to any attempts to provide access to this data. "If there are aliens, they certainly would like to be left alone," she stated, before directing us to the Leave Aliens Alone (LAA) community engagement initiative she founded and funds.<br><br>So what do YOU think? Are we alone in the universe? Are aliens trying to contact us, or do they want to be left alone? Dig through the data yourself, and let us know what you see. 
+                </p>
+            </div>
+        </div>
+    </div>
+<!-- set up a new fluid container to store our filter and the data table-->
+<div class="container-fluid">
+    <!-- row class will set up our grid again-->
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-9">
+        </div>
+    </div>
+</div>
+<!-- This section builds the filter for our table where we will accept user input using the HTML specific field: a form-->
+<form>
+    <p>Filter Search</p>
+</form>
+<!-- now we use the Javascript filter code to search by date so need input box for a date and button (#filter-btn) for searching-->
+<!-- this will be done in set of list (li) tags nested within unordered list (ul) tag and include some Bootstrap classes to make it nice-->
+<ul class="list-group"></ul>
+<!-- add the list items - one for input and one for button-->
+    <li> class = "list-group-item">
+        <!-- Use HTML component called label to prompt users to input a date-->
+        <!-- this label represents a caption for the date item-->
+            <label for="date">Enter Date</label>
+            <!-- JS will look for the id datetime when the button is clicked and the function is executed-->
+            <input type="text" placeholder="1/10/2010" id="datetime" />
+    </li>
+    <li> class = "list-group-item">
+     <!-- this will add the filter button we defined in the JS code as #filter-btn, a type and a class  
+    we have named it Filter Table by nesting it between opening and closing button tags  JS looks for the id named filter-btn--> 
+        <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>   
+    </li>
+
+</ul>
+<!-- in the app.js we used D3 to select the "tbody" HTML tag so need to build this component and link the JS and HTML files
+the table and filter components are both inside the same container so we nly need to construct the table HTML-->
+
+<div class="col0md-p">
+    <table class="table table-striped">
+        <!-- this will be our table setup--> 
+        <thead>
+            <!-- everything nested in tr will be displayed as a row of data-->
+            <tr>
+                <!-- th adds the column headers we need to add a th tag for each table header-->
+                <th>Date</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Shape</th>
+                <th>Duration</th>
+                <th>Comments</th>
+            </tr>
+         
+        
+        </thead>
+   
+    <tbody></tbody>
+    </table>   
+</div>
+
+
+
 
 </body>
 </html>
