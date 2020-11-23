@@ -72,8 +72,7 @@ function filterTable() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-// Read a row first then loop through the filterid/values to see if they all match
- //     data.forEach((dataRow) => {
+
   let date = d3.select("#datetime").property("value");
   let city = d3.select("#city").property("value");
   let state = d3.select("#state").property("value");
@@ -82,30 +81,25 @@ function filterTable() {
 
 
   for (var key in filters){
- //    read a row,  if city = city AND state = state AND country = country AND shape = shape ANE date = date
-  //  put the row into filtered data
+ //    read a row,  if city = city AND state = state AND country = country AND shape = shape AND date = date
+  //  put the row into filtered data only filters if date matches then will filter if city matches
  //   } 
-          if (date) {
-          filteredData = filteredData.filter(row => row.datetime === date);
-            if(city) {
-              filteredData = filteredData.filter(row => row.city === city);
-              if(state) {
-                filteredData = filteredData.filter(row => row.state === state);
-                if(country) {
-                  filteredData = filteredData.filter(row => row.country === country);
-                  if(shape) {
-                    filteredData = filteredData.filter(row => row.shape === country);
-                  }
-                }
-              } 
-            }
-          }
-        }
+      if (date) 
+        filteredData = filteredData.filter(row => row.datetime === date);
+      if(city) 
+        filteredData = filteredData.filter(row => row.city === city);
+      if(state) 
+        filteredData = filteredData.filter(row => row.state === state);
+      if(country) 
+        filteredData = filteredData.filter(row => row.country === country);
+      if(shape) 
+        filteredData = filteredData.filter(row => row.shape === shape);
+
+  }
     // 10. Finally, rebuild the table using the filtered data
         buildTable(filteredData)
 };
   
      // attach an event to listen for the form button
 d3.selectAll("input").on("change",updateFilters );
-     // build the table when the page loads
-//buildTable(tableData);
+    
