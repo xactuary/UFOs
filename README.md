@@ -12,20 +12,16 @@ List of UFO sitings that includes the following variables
 3. Country
 4. Date of sighting
 5. Shape of object seen
+6. Comments and description
 
 ## ANALYSIS
 
+
 The UFO web app has been deployed through GitHub and can be found at the following link:
 
-
-[Link](https://xactuary.github.io/UFOs/) 
-```
+https://xactuary.github.io/UFOs/ 
 
 
-Overview of the analysis:
-
-The purpose is well defined (2 pt)
-Results:
 
 There is a description of how to perform a search, with images. (4 pt)
 Summary:
