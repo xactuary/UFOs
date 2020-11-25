@@ -26,14 +26,14 @@ If you scroll to the bottom of the page you will see the table of data that is a
 
 If you don't want to scroll through all the data, you can use the filter boxes as shown below:
 
-![]https://github.com/xactuary/UFOs/blob/main/Resources/cleansearch.PNG
+![](https://github.com/xactuary/UFOs/blob/main/Resources/cleansearch.PNG)
 
-To use the boxes, just type in a value in one of the filters and press Enter.  For example, we type in the city name of "El Cajon" and press the Enter Key.  
-This means that the table below will only show events from the city El Cajon but will show all dates and shapes for that city.  
+To use the boxes, just type in a value in one of the filters and press Enter.  For example, we type in the city name of "el cajon" and press the Enter Key.  
+This means that the table below will only show events from the city el cajon but will show all dates and shapes for that city.  
 
 ![](https://github.com/xactuary/UFOs/blob/main/Resources/elcajon.PNG)
 
-The result is five entries for the city of El Cajon.  To further filter the data, just go back to a filter box and fill in a value for another variable.  So let's try the date of 1/4/2010 and press Enter.  Now the filter comes back with just one instance.
+The result is five entries for the city of el cajon.  To further filter the data, just go back to a filter box and fill in a value for another variable.  So let's try the date of 1/4/2010 and press Enter.  Now the filter comes back with just one instance.
 
 ![](https://github.com/xactuary/UFOs/blob/main/Resources/searchresult.PNG)
 
@@ -41,6 +41,6 @@ So that's how easy it is to navigate the webapp and view the data in whatever fi
 
 
 ## SUMMARY
-This web app is simple to use and fun to look at.  However, there are limitations which include the fact that the dataset is very small so most arbitrary search criteria entered will return an empty dataset.  This drawback would be greatly improved by using some web scraping abilities to find more data to append to the current data set.  An improvement that could be added to the website that would help with the problem of too little data would be to add a drop down menu that includes just the data filter answers that are available.  For example, the date box could have a drop down list of the dates available and the user could select one of these.  
+This web app is simple to use and fun to look at.  However, there are limitations which include the fact that the dataset is very small so most arbitrary search criteria entered will return an empty dataset.  In addition, the filter boxes are case sensitive so exact match is required.  These drawback would be greatly improved by using some web scraping abilities to find more data to append to the current data set and to do some fuzzy matching so it is not case sensitive.  An improvement that could be added to the website that would help with the problem of too little data would be to add a drop down menu that includes just the data filter answers that are available.  For example, the date box could have a drop down list of the dates available and the user could select one of these.  
 
 
