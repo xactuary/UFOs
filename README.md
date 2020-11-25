@@ -27,6 +27,8 @@ If you scroll to the bottom of the page you will see the table of data that is a
 If you don't want to scroll through all the data, you can use the filter boxes as shown below:
 
 ![](https://github.com/xactuary/UFOs/blob/main/Resources/filter.PNG)
+
+To use the boxes, just type in a value in one of the filters.  For example, we type in the city name of "El Cajon" and press the Enter Key.  
 In this view, only one box has a filter choice entered - "El Cajon"
 This means that the table below will only show events from the city El Cajon but will show all dates and shapes.  
 
@@ -34,7 +36,8 @@ This means that the table below will only show events from the city El Cajon but
 
 So there are five entries for the city of El Cajon.  To further filter the data, just go back to a filter box and fill in a value for another variable.  So let's try the data of 1/4/2010.  Now the filter comes back with just one instance.
 
-![](
+![](https://github.com/xactuary/UFOs/blob/main/Resources/searchresult.PNG)
+
 
 
 
