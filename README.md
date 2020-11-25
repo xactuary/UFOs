@@ -16,15 +16,16 @@ List of UFO sitings that includes the following variables
 
 ## ANALYSIS
 
-
-The UFO web app has been deployed through GitHub and can be found at the following link:
+The web app is simple to use.  First of all, you can click on the following link to use the app which has been deployed through GitHub:
 
 https://xactuary.github.io/UFOs/ 
 
+If you scroll to the bottom of the page you will see the table of data that is available.
+![](
+
+If you don't want to scroll through all the data, you can use the filter boxes 
+
+## SUMMARY
+This web app is simple to use and fun to look at.  However, there are limitations which include the fact that the dataset is very small so most arbitrary search criteria entered will return an empty dataset.  This drawback would be greatly improved by using some web scraping abilities to find more data to append to the current data set.  An improvement that could be added to the website that would help with the problem of too little data would be to add a drop down menu that includes just the data filter answers that are available.  For example, the date box could have a drop down list of the dates available and the user could select one of these.  
 
 
-There is a description of how to perform a search, with images. (4 pt)
-Summary:
-
-The summary addresses one drawback of this webpage (2 pt)
-The summary addresses two additional recommendations for further development (4 pt)
