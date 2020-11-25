@@ -1,4 +1,5 @@
 # The Truth is Out There - Web App to view UFO Sitings
+![](https://github.com/xactuary/UFOs/blob/main/Resources/title.PNG)
 ## SUMMARY
 The goal of this project was the creation of a web app using Javascript and HTML that allows the user to look through a database of UFO sightings with various filters on the data.
 ### BACKGROUND
