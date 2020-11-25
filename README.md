@@ -20,8 +20,9 @@ The web app is simple to use.  First of all, you can click on the following link
 
 https://xactuary.github.io/UFOs/ 
 
-If you scroll to the bottom of the page you will see the table of data that is available.
-![](
+If you scroll to the bottom of the page you will see the table of data that is available.  This is what the data table will look like:
+
+![](https://github.com/xactuary/UFOs/blob/main/Resources/datasample.PNG)
 
 If you don't want to scroll through all the data, you can use the filter boxes 
 
