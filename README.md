@@ -26,7 +26,10 @@ If you scroll to the bottom of the page you will see the table of data that is a
 
 If you don't want to scroll through all the data, you can use the filter boxes as shown below:
 
-![](
+![](https://github.com/xactuary/UFOs/blob/main/Resources/filter.PNG)
+In this view, only one box has a filter choice entered - "El Cajon"
+This means that the table below will only show events from the city El Cajon but will show all dates and shapes.  
+
 
 ## SUMMARY
 This web app is simple to use and fun to look at.  However, there are limitations which include the fact that the dataset is very small so most arbitrary search criteria entered will return an empty dataset.  This drawback would be greatly improved by using some web scraping abilities to find more data to append to the current data set.  An improvement that could be added to the website that would help with the problem of too little data would be to add a drop down menu that includes just the data filter answers that are available.  For example, the date box could have a drop down list of the dates available and the user could select one of these.  
